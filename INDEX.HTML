@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAKZ DIY BOX | WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>-->
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">SAKZ DIY BOX</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#">Our Channel</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+    <div id="Home" class="content">
+      <div class="title">WELCOME TO SAK'Z DIY BOX</div>
+      Hi guys,<BR> 
+
+Our channel helps you to get knowledgeable and I am sure it will help you. We do <b>Product reviews, Tech videos, Experiments, Puzzles and Vlogs</b> to entertain you. You can request us to do simple experiments which you want us to try. Don't forget to check the description of our channel video, because we give you a fact in each of our video so that it helps you to be informative. Don't forget to <b>subscribe and like</b> our channel to support us, and hit the bell icon(and click all) to get immediate notifications of our new videos. Please help me hit <b>1k subs</b>, so that we can keep entertaining you more frequently and energetically. You can ask your questions in the comments and it will be answered. Let's grow together 🌎🌐.<br><BR><BR>
+<a href="https://www.youtube.com/channel/UCzhQjORVSlSwYXdqRGNaxfQ?sub_confirmation=1">   
+  <button class="block" style="background-color: #c4302b;"> SUBSCRIBE</button></a><p>
+
+  </p>
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/UyV7aNN-F5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+ <div id="about" class="content"></div>
+ <div class="title">About Me</div>
+ 
+
+</div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>
