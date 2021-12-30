@@ -157,4 +157,11 @@
 }html    
 {
 scroll-behavior: smooth
+}img#me{
+    width: 500px;
+    clip-path: circle();
+    position: relative;
+    left: 400px;
+    width: 400px;
+    
 }
