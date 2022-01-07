@@ -158,10 +158,9 @@
 {
 scroll-behavior: smooth
 }img#me{
-    width: 500px;
+    width:400px ;
     clip-path: circle();
-    position: relative;
-    left: 400px;
-    width: 400px;
+    display: block;
+    margin: 0 auto;
     
 }
